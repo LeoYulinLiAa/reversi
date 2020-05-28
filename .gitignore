@@ -117,3 +117,6 @@ dist
 
 # WebStorm
 .idea
+
+# Build
+lib/
