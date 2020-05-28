@@ -112,7 +112,6 @@ export = class Board {
   /**
    * Produces an array of all valid positions on
    * the Board for a given color.
-   * @returns {Array<[number, number]}
    */
   validMoves(color: Color): Vector2D[] {
     const res: Vector2D[] = [];
