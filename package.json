@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "A Reversi CLI game.",
   "scripts": {
-    "start": "node bin/main.js",
-    "test": "./node_modules/mocha/bin/mocha"
+    "build": "tsc -p .",
+    "start": "npm run-script build && node bin/main.js",
+    "test": "npm run-script && ./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,8 @@
     "url": "https://github.com/appacademy/js-reversi/issues"
   },
   "devDependencies": {
-    "mocha": "~7.0.1"
+    "mocha": "^7.2.0",
+    "typescript": "^3.9.3",
+    "@types/node": "^14.0.5"
   }
 }
