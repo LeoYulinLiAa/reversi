@@ -11,7 +11,7 @@ export = class Piece {
   /**
    * color opposite the current piece
    */
-  oppColor()  {
+  oppColor() {
     return this.color == "white" ? "black" : "white"
   }
 

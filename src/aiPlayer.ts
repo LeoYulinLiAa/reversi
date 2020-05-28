@@ -1,4 +1,4 @@
-import  Board  from './board';
+import Board from './board';
 import { Player } from './player';
 
 export = class AIPlayer extends Player {
@@ -10,10 +10,10 @@ export = class AIPlayer extends Player {
         return this.board._positionsToFlip(pos, this.color, dir).length + sum;
       }, 0);
 
-      return {pos, len};
-    }).reduce(({pos: maxPos, len: maxLen}, {pos, len}) => {
+      return { pos, len };
+    }).reduce(({ pos: maxPos, len: maxLen }, { pos, len }) => {
       if (len > maxLen) {
-        return {pos, len};
+        return { pos, len };
       } else {
         return { pos: maxPos, len: maxLen };
       }
